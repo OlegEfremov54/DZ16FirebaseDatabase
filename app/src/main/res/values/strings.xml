@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DZ16FirebaseDatabase</string>
+    <string name="infoStr">Информация о приложении</string>
+    <string name="exit">Выход из приложения</string>
+    <string name="name_contact">Имя контакта</string>
+    <string name="namber_fon">Номер телефона</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

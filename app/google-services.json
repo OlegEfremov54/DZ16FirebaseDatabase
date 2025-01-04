@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906951733010",
+    "project_id": "dz16firebasedatabase",
+    "storage_bucket": "dz16firebasedatabase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906951733010:android:72c6f25e8c1a02dfc80dcb",
+        "android_client_info": {
+          "package_name": "com.example.dz16firebasedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4C7TmPmenYFOHX6VLzGPs25fKaz-xxSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
