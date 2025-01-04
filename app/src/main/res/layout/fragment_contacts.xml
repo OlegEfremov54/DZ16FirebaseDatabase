@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactsFragment"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/insert_contact_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_et"
+                android:autofillHints="name"
+                android:hint="@string/name_et"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_et"
+                android:hint="@string/phone_et"
+                android:autofillHints="password"
+                android:inputType="phone"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insert_contact_btn"
+                android:text="@string/insert_contact_btn"
+                android:layout_margin="8dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_contact"
+        android:padding="8dp"/>
+
+</LinearLayout>

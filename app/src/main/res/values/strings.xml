@@ -6,4 +6,14 @@
     <string name="namber_fon">Номер телефона</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_et">Введите email</string>
+    <string name="password_et">Введите пароль</string>
+    <string name="confirm_password_et">Повторите ввод пароля</string>
+    <string name="sign_up_btn">Зарегистрироваться</string>
+    <string name="already_has_account_tv">Уже зарегистрированый акаунт</string>
+    <string name="login_btn">Войти</string>
+    <string name="has_not_account_tv">Необходима регистрация</string>
+    <string name="insert_contact_btn">Добавить контакт</string>
+    <string name="name_et">Имя контакта</string>
+    <string name="phone_et">Номер телефона</string>
 </resources>
