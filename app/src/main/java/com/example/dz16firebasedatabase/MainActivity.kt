@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
 //Тулбар
         toolbarMain = findViewById(R.id.toolbarMain)
         setSupportActionBar(toolbarMain)
-        title = " Электронная почта"
-        toolbarMain.subtitle = " Версия 1.FirebaseAuthentication"
+        title = " Контакты в Firebase"
+        toolbarMain.subtitle = " Версия 1.Контакты в Firebase"
         toolbarMain.setLogo(R.drawable.diplomamini)
         //supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         //toolbarMain.setNavigationOnClickListener { onBackPressed() }
