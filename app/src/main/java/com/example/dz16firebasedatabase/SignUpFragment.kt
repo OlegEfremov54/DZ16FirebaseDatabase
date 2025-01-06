@@ -60,7 +60,7 @@ class SignUpFragment : Fragment() {
         }
 
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(requireActivity()) {
-            if (it.isSuccessful) {
+            if (it.isComplete()) {
                 Toast.makeText(requireContext(), "Пользователь зарегистрирован успешно", Toast.LENGTH_LONG).show()
                 findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
             } else {

@@ -22,7 +22,7 @@ class ContactsFragment : Fragment(), ContactAdapter.OnItemClickListener {
     private var contactList = mutableListOf<ContactModel>()
     private var contactAdapter: ContactAdapter? = null
     private val DATABASE_NAME = "contacts"
-    private val USER_ID: String = FirebaseAuth.getInstance().currentUser?.uid ?: "unlogged_user"
+    private val USER_ID: String? = FirebaseAuth.getInstance().currentUser?.uid
 
 
     override fun onCreateView(
@@ -64,7 +64,7 @@ class ContactsFragment : Fragment(), ContactAdapter.OnItemClickListener {
     private fun insertContact(contact: ContactModel) {
         val database = Firebase.database.reference
             .child(DATABASE_NAME)
-            .child(USER_ID)
+            .child(USER_ID!!)
         val map: HashMap<String, ContactModel> = HashMap()
         map[contact.name!!] = contact
         database.updateChildren(map as Map<String, Any>)
@@ -75,7 +75,7 @@ class ContactsFragment : Fragment(), ContactAdapter.OnItemClickListener {
     private fun readDatabase() {
         val dataSnapshot = Firebase.database.reference
             .child(DATABASE_NAME)
-            .child(USER_ID)
+            .child(USER_ID!!)
             .get()
         dataSnapshot.addOnSuccessListener {
             contactList.clear()
@@ -109,7 +109,7 @@ class ContactsFragment : Fragment(), ContactAdapter.OnItemClickListener {
     private fun removeUser(contact: ContactModel) {
         Firebase.database.getReference()
             .child(DATABASE_NAME)
-            .child(USER_ID)
+            .child(USER_ID!!)
             .child(contact.name!!)
             .removeValue()
     }
